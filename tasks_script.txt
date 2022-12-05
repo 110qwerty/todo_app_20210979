@@ -1,0 +1,4 @@
+CREATE TABLE tasks (
+ `id` int primary key auto_increment,
+ `task` varchar(1000) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;

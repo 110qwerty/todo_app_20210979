@@ -1,0 +1,6 @@
+CREATE TABLE memo (
+ `idx` int primary key auto_increment,
+ `name` varchar(20) NOT NULL,
+ `memo` varchar(200) NOT NULL,
+ `regdate` varchar(20) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;

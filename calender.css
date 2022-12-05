@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Dongle:wght@400;700&family=Noto+Sans+KR&display=swap'); /*폰트 사이트에서 복붙한거*/
+
+
+* {margin: 0; padding: 0; box-sizing: border-box;}
+body {
+    font-family: 'Dongle', sans-serif; /*폰트 사이트에서 복붙한거*/
+    font-family: 'Noto Sans KR', sans-serif; /*폰트 사이트에서 복붙한거*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-size: cover;
+    background-color: #0b182c; /*이거 원래 없는거임*/
+}
+header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	font-size: 12px;
+	height: 75px;
+	padding: 1rem;
+	color: white;
+	background: #b4b1f1;
+	font-weight: bold;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+  }
+  header h1 {
+    font-size: 15px;
+  }
+  
+table {
+    border-collapse: collapse;
+}
+
+td {
+    width: 100%;
+    padding: 20px 10px 10px;
+    border-bottom: 1px solid #999;
+    font-size: 18px; color: #fff;
+    outline: none;
+}
+
+.calender-form { position: relative; z-index: 2; }
+.calender-form h1 {
+    font-size: 32px; color: #fff;
+    text-align: center;
+    margin-bottom: 60px;
+}
+/*
+.int-area {
+    width: 400; position: relative;
+    margin-top: 20px;
+}
+.int-area:first-child {margin-top: 0;}
+.int-area input {
+    width: 100%;
+    padding: 20px 10px 10px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #999;
+    font-size: 18px; color: #fff;
+    outline: none;
+}
+.int-area label {
+    position: absolute; left: 10px; top: 15px;
+    font-size: 18px; color: #999;
+    transition: top .5s ease;
+}
+.int-area label.warning {
+    color: red !important;
+    animation: warning .3s ease;
+    animation-iteration-count: 3;
+}
+@keyframes warning {
+    0% { transform: translateX(-8px);}
+    25% { transform: translateX(8px);}
+    50% { transform: translateX(-8px);}
+    75% { transform: translateX(8px);}
+}
+.int-area input:focus + label,
+.int-area input:valid + label {
+    top: -2px;
+    font-size: 13px; color: #166cea;
+}
+
+.btn-area {margin-top: 30px;}
+.btn-area button {
+    width: 100%; height: 50px;
+    background: #166cea;
+    color: #fff;
+    font-size: 20px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+}
+*/

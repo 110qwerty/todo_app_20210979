@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+    <meta charset="utf-8">
+    <title>시간</title>
+    <link rel="stylesheet" href="clock.css">
+    <header>
+        <h1>Do it!</h1>
+            <nav style="padding:10px 50px 10px 50px;">
+                <span><a href="index.html">logout</a></span>
+                <span><a href="todo.php">todo</a></span>
+                <span><a href="memo.php">memo</a></span>
+                <span><a href="calender.html">calender</a></span>
+                <span><a href="clock.html">clock</a></span>
+            </nav>
+    </header>
+</head>
+<body onload="showClock()">
+    <section class="clock-form">
+        <h1>시간 보고 심각성을 느끼는 공간</h1>
+        <div id="divClock" class="clock"></div>
+                <script type="text/javascript">
+                    function showClock()
+                    {
+                        var currentDate=new Date();
+                        var divClock=document.getElementById("divClock");
+                        var apm=currentDate.getHours();
+                        if(apm<12)
+                        {
+                            apm="오전";
+                        }
+                        else
+                        {
+                            apm="오후";
+                        }
+                        
+                        var msg = "현재시간 : "+apm +(currentDate.getHours()-12)+"시";
+                        msg += currentDate.getMinutes() + "분";
+                        msg += currentDate.getSeconds() + "초";
+                        
+                        divClock.innerText=msg;
+                        
+                        setTimeout(showClock,1000);
+                    }
+                </script>
+    </section>
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+    <meta charset="utf-8">
+    <title>회원가입</title>
+    <link rel="stylesheet" href="member_create.css">
+    <script language="javascript">
+
+        function Input() 
+        {
+
+            if(document.frmInput.email.value == "") {
+                alert("please check your Email.");
+                document.frmInput.email.focus();
+                return false;
+            }
+            if(document.frmInput.pw_1.value == "") {
+                alert("please check your Password.");
+                document.frmInput.pw_1.focus();
+                return false;
+            }
+            if(document.frmInput.pw_2.value == "") {
+                alert("please check your Repeat Password.");
+                document.frmInput.pw_2.focus();
+                return false;
+            }
+
+            if(document.frmInput.name.value == "") {
+                alert("please check your Name.");
+                document.frmInput.name.focus();
+                return false;
+            }
+
+            if(document.frmInput.Phone.value == "") {
+                alert("please check your Phone Number.");
+                document.frmInput.Phone.focus();
+                return false;
+            }
+
+            document.frmInput.submit();
+        }
+
+    </script>
+</head>
+<body>
+    <section class="register_form">
+        <h1>회원가입</h1>                 
+            <form name="frmInput" action="memberWrite.php" method="post" enctype="multipart/form-data">
+                <div class="int-area">
+                    <input type="email" name="email" id="email" autocomplete="off" required>
+                    <label for="email">아이디</label>
+                </div>
+                <div class="int-area">
+                    <input type="password" name="pw_1" id="pw_1" autocomplete="off" required>
+                    <label for="pw_1">비밀번호</label>
+                </div>
+                <div class="int-area">
+                    <input type="password" name="pw_2" id="pw_2" autocomplete="off" required>
+                    <label for="pw_2">비밀번호 확인</label>
+                </div>
+                <div class="int-area">
+                    <input type="text" name="name" id="name" autocomplete="off" required>
+                    <label for="name">이름</label>
+                </div>
+                <div class="int-area">
+                    <input type="tel" name="Phone" id="Phone" autocomplete="off" required>
+                    <label for="Phone">휴대전화</label>
+                </div>
+                <div class="btn-area">
+                    <button type="button" onclick="Input()">회원가입</button>
+                </div>
+                <div class="caption2">
+                    <a href="index.html">로그인 페이지</a>
+                </div>
+            </form>
+</body>
+</html>

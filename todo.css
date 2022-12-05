@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Dongle:wght@400;700&family=Noto+Sans+KR&display=swap'); /*폰트 사이트에서 복붙한거*/
+
+
+* {margin: 0; padding: 0; box-sizing: border-box;}
+body {
+    font-family: 'Dongle', sans-serif; /*폰트 사이트에서 복붙한거*/
+    font-family: 'Noto Sans KR', sans-serif; /*폰트 사이트에서 복붙한거*/
+    color :#fff;
+    background-color: #0b182c; /*이거 원래 없는거임*/
+	padding-top: 75px;
+}
+header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	font-size: 12px;
+	height: 75px;
+	padding: 1rem;
+	color: white;
+	background: #b4b1f1;
+	font-weight: bold;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+  }
+  header h1 {
+    font-size: 15px;
+  }
+
+.heading{
+	width: 50%;
+	margin: 30px auto;
+	text-align: center;
+	color: 	#fff;
+	background: #b4b1f1;
+	border: 2px solid #fff;
+}
+
+form {
+	width: 50%; 
+	margin: 30px auto; 
+	border-radius: 5px; 
+	padding: 10px;
+	background: #b4b1f1;
+	border: 2px solid #fff;
+}
+form p {
+	color: red;
+	margin: 0px;
+}
+.task_input {
+	width: 75%;
+	height: 15px; 
+	padding: 10px;
+	border: 2px solid #fff;
+}
+.add_btn {
+	width: 20%; height: 25px;
+	background: #b4b1f1;
+	color: 	#fff;
+	border: 2px solid #fff;
+	border-radius: 5px; 
+	padding: auto;
+	cursor: pointer;
+    /*font-size: 10px;*/
+}
+
+table {
+    width: 50%;
+    margin: 30px auto;
+    border-collapse: collapse;
+}
+
+tr {
+	border-bottom: 1px solid #cbcbcb;
+}
+
+th {
+	font-size: 19px;
+	color: #fff;
+}
+
+th, td{
+	border: none;
+    height: 30px;
+    padding: 2px;
+}
+
+tr:hover {
+	background: #b4b1f1;
+}
+
+.task {
+	text-align: left;
+}
+
+.delete{
+	text-align: center;
+}
+.delete a{
+	color: white;
+	background: #a52a2a;
+	padding: 1px 6px;
+	border-radius: 3px;
+	text-decoration: none;
+}

@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Dongle:wght@400;700&family=Noto+Sans+KR&display=swap'); /*폰트 사이트에서 복붙한거*/
+
+
+* {margin: 0; padding: 0; box-sizing: border-box;}
+body {
+    font-family: 'Dongle', sans-serif; /*폰트 사이트에서 복붙한거*/
+    font-family: 'Noto Sans KR', sans-serif; /*폰트 사이트에서 복붙한거*/
+    background-color: #0b182c; /*이거 원래 없는거임*/
+    color :#fff;
+    padding-top: 75px;
+}
+header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	font-size: 12px;
+	height: 75px;
+	padding: 1rem;
+	color: white;
+	background: #b4b1f1;
+	font-weight: bold;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+  }
+  header h1 {
+    font-size: 15px;
+  }
+.memo-form { position: relative; z-index: 2; }
+.memo-form h1 {
+    font-size: 32px; color: #fff;
+    text-align: center;
+    
+}
+.int-area {
+    width: 50%;
+    position: relative;
+    margin-top: 20px;
+}
+.int-area:first-child {margin-top: 0;}
+.int-area input {
+    width: 50%;
+    padding: 20px 10px 10px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #999;
+    font-size: 18px; color: #fff;
+    outline: none;
+}
+
+@keyframes warning {
+    0% { transform: translateX(-8px);}
+    25% { transform: translateX(8px);}
+    50% { transform: translateX(-8px);}
+    75% { transform: translateX(8px);}
+}
+
+.btn-area {margin-top: 30px;}
+.btn-area button {
+    width: 10%; height: 25px;
+    background: #b4b1f1;
+    color: #fff;
+    font-size: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+td
+{
+border : 1px solid #000 ;
+width : 150px ;
+}
+table {
+    width:450px;
+    word-break:break-all;
+    height:auto;
+    border: 1px solid #999;
+    margin: auto;
+}
